@@ -1,0 +1,10 @@
+.content-container {
+  width: 100%;
+  height: auto;
+  background-image: url('./img/pizza-background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  padding-bottom: 100px;
+}
