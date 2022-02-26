@@ -21,21 +21,22 @@ document.body.appendChild(Header(contentLoaderFunc));
 function contentLoader () {
   if(pageChecker === 1) {
     const removeElement = document.querySelector('.content-container');
-    document.querySelector('body').removeChild(removeElement);
     const bodyElement = document.querySelector('body');
-    console.log(bodyElement);
+    const footerWrapper = document.querySelector('.footer-wrapper');
+    bodyElement.removeChild(removeElement);
+    bodyElement.insertBefore(Content(contentHome), footerWrapper);
   } else if (pageChecker === 2) {
     const removeElement = document.querySelector('.content-container');
-    document.querySelector('body').removeChild(removeElement);
-    console.log(removeElement);
     const bodyElement = document.querySelector('body');
-    console.log(bodyElement);
+    const footerWrapper = document.querySelector('.footer-wrapper');
+    bodyElement.removeChild(removeElement);
+    bodyElement.insertBefore(Content(contentMenu), footerWrapper);
   } else if (pageChecker === 3) {
     const removeElement = document.querySelector('.content-container');
-    document.querySelector('body').removeChild(removeElement);
-    console.log(removeElement);
     const bodyElement = document.querySelector('body');
-    console.log(bodyElement);
+    const footerWrapper = document.querySelector('.footer-wrapper');
+    bodyElement.removeChild(removeElement);
+    bodyElement.insertBefore(Content(contentAbout), footerWrapper)
   }
 };
 
